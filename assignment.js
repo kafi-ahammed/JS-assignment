@@ -1,6 +1,10 @@
 //
 
 
+
+
+
+// Start
 function kilometerToMeter(kilometer){
     if(kilometer>=0){
         var meter=kilometer*1000;
@@ -10,10 +14,13 @@ function kilometerToMeter(kilometer){
         return 'In the case of meters the subtraction value is not converted';
     }
 }
+// End
 
 
 
 
+
+// Start
 function budgetCalculator(watch, phone, laptop) {
 	if ((typeof watch == "number" && watch >= 0) && (typeof phone == "number" && phone >= 0) && (typeof laptop == "number" && laptop >= 0)){ 
 		var watch = watch * 50;
@@ -29,10 +36,13 @@ function budgetCalculator(watch, phone, laptop) {
 		return budgetCalculator;
 	}
 }
+// End
 
 
 
 
+
+// Start
 function hotelCost(day){
     var fare=0;
     if(day<=10){
@@ -53,13 +63,23 @@ function hotelCost(day){
     }
     return fare;
 }
+// End
 
 
 
 
-function megaFriend(){
-    
+
+// Start
+var arrayName = ["kafi", "raju", "muqtadir", "roni"];
+function megaFriend(arrayName) {
+    var longest = arrayName[0];
+    for (var i = 1; i < arrayName.length; i++) {
+        if (arrayName[i].length > longest.length) {
+            longest = arrayName[i];
+        }
+    }
+    return longest;
 }
-
+// End
 
 
